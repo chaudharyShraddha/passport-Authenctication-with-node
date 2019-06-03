@@ -1,0 +1,21 @@
+
+<div class="col col-md-6">
+    {{> partails}}
+<form action="/user/login" method="POST" class=" border border-light p-5">
+ <h3 class="h4 mb-4">Login</h3>
+    
+  <div class="form-group">
+    <label class="float-left">Email address</label>
+    <input type="email" class="form-control" placeholder="Enter email" value="{{data.email}}" name="email">
+  </div>
+
+  <div class="form-group">
+    <label class="float-left">Password</label>
+    <input type="password" class="form-control"  placeholder="Password" value="{{data.password}}" name="password">
+  </div>
+
+  <button type="submit" class="btn btn-dark float-left"  style="width: 150px;"><i class="fas fa-sign-in-alt"></i> Login</button>
+  <br/><br/>
+  <p class="float-left">Don't have account <a href="/user/register">Signup</a></p>
+</form>
+</div>

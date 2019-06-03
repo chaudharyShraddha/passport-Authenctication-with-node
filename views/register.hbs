@@ -1,0 +1,30 @@
+
+<div class="col col-md-6">
+
+<form action="/user/register" method="POST" class=" border border-light p-5">
+ <h3 class="h4 mb-4">Registration</h3>
+    {{> partails}}
+  <div class="form-group">
+    <label class="float-left">Name</label>
+    <input type="text" name="name" placeholder="enter name" class="form-control" value="{{name}}">
+  </div>
+
+  <div class="form-group">
+    <label class="float-left">Email address</label>
+    <input type="email" class="form-control" placeholder="Enter email"  name="email" value="{{email}}">
+  </div>
+
+  <div class="form-group">
+    <label class="float-left">Password</label>
+    <input type="password" class="form-control"  placeholder="Password"  name="pass" value="{{pass}}">
+  </div>
+  <div class="form-group">
+    <label class="float-left">Confirm Password</label>
+    <input type="password" class="form-control"  placeholder="Password" name="pass2" value="{{pass2}}">
+  </div>
+
+  <button type="submit" class="btn btn-dark float-left"  style="width: 150px;"><i class="fas fa-user-plus"></i> Register</button>
+   <br/><br/>
+  <p class="float-left">Have an account <a href="/user/login">Login</a></p>
+</form>
+</div>
